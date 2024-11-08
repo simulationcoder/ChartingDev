@@ -1,2 +1,2 @@
-# Charting
-Practicing Charting in this repository
+# Vizuale
+Practicing visualization in this repository
