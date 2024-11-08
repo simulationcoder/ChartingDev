@@ -1,2 +1,2 @@
-# Vizuale
-Practicing visualization in this repository
+# Visualize
+Practicing Visualization in this repository
