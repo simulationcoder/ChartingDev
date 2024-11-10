@@ -3,7 +3,6 @@ import pandas as pd
 import archive.streamlit as st
 import matplotlib.pyplot as plt
 
-st.title("Nurral")
 
 # Directory where your CSV files are stored
 directory = "pricingData"
