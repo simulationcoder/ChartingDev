@@ -11,8 +11,8 @@ listings_file = os.path.join("files", "listings.csv")  # Path to your listings.c
 listings_df = pd.read_csv(listings_file)
 
 # Ensure the columns are named correctly
-listings_df.columns = ['ticker', 'name', 'exchange']
-
+#listings_df.columns = ['ticker', 'name', 'exchange']
+listings_df.columns = ['ticker','name','exchange','assetType','ipoDate','delistingDate','status','country']
 # Get all CSV filenames in the directory
 csv_files = [f for f in os.listdir(directory) if f.endswith('.csv')]
 
