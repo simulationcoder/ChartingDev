@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-import streamlit as st
+import archive.streamlit as st
 import matplotlib.pyplot as plt
 
 # Directory where your CSV files are stored
