@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-import archive.streamlit as st
+import streamlit as st
 import matplotlib.pyplot as plt
 
 
