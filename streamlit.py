@@ -4,7 +4,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 # Directory where your CSV files are stored
-directory = "files"  # Change to your actual directory path
+directory = "pricingData"  # Change to your actual directory path
 
 # Get all CSV filenames in the directory
 csv_files = [f for f in os.listdir(directory) if f.endswith('.csv')]
