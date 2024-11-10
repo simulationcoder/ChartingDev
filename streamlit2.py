@@ -11,7 +11,7 @@ listings_file = os.path.join("files", "listings.csv")  # Path to your listings.c
 listings_df = pd.read_csv(listings_file)
 
 # Ensure the columns are named correctly
-listings_df.columns = ['Ticker', 'Name', 'Exchange']
+listings_df.columns = ['ticker', 'name', 'exchange']
 
 # Get all CSV filenames in the directory
 csv_files = [f for f in os.listdir(directory) if f.endswith('.csv')]
@@ -26,11 +26,11 @@ selected_file = st.selectbox("Choose Ticker", csv_display_names)
 file_name = f"{selected_file}.csv"
 
 # Get the associated name and exchange from listings.csv
-selected_info = listings_df[listings_df['Ticker'] == selected_file]
+selected_info = listings_df[listings_df['ticker'] == selected_file]
 
 if not selected_info.empty:
-    ticker_name = selected_info.iloc[0]['Name']
-    ticker_exchange = selected_info.iloc[0]['Exchange']
+    ticker_name = selected_info.iloc[0]['name']
+    ticker_exchange = selected_info.iloc[0]['exchange']
     st.write(f"**Name**: {ticker_name}")
     st.write(f"**Exchange**: {ticker_exchange}")
 else:
