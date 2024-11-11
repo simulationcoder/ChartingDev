@@ -3,7 +3,8 @@ import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
 
-st.title("Nurral Stock Picker")
+# Add the app title with "beta" in smaller font
+st.markdown("<h1 style='display: inline-block'>Nurral</h1> <span style='font-size: 0.7em; color: gray;'>(beta)</span>", unsafe_allow_html=True)
 
 # Directory where your CSV files are stored
 directory = "pricingData"
