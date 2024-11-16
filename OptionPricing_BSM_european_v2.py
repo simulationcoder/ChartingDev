@@ -74,7 +74,7 @@ with col2:
 
 # Calculate option price
 option_price = black_scholes_option_price(S, K, T, r, sigma, option_type)
-st.write(f"The European {option_type} option price is: ${option_price:.2f}")
+st.write(f"The European {option_type} option price is: ${option_price:.6f}")
 
 # Plot the payoff diagram
 premium = option_price
